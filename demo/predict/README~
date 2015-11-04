@@ -1,0 +1,31 @@
+Sam Xu
+11/1/2015
+
+images folder contains the 10 object images that this program uses
+
+the first 50 images for each class is used for training
+
+prediction should be done on the last 30 images of each class
+
+here is the class label as integer and their corresponding name:
+
+1 -- Airplane
+2 -- Bike
+3 -- Fish
+4 -- Lightbulb
+5 -- Monkey
+6 -- Pig
+7 -- Pizza
+8 -- Snowman
+9 -- Tree
+10 -- Apple
+
+Example:
+
+Type in command line ./predict images/Apple 62 to predict the class label for 62.png 
+in the images/Apple folder
+The output will be prediction.txt
+
+
+
+

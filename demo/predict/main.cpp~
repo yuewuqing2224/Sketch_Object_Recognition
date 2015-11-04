@@ -1,0 +1,26 @@
+#include "Predict.h"
+#include <iostream>
+
+using namespace std;
+
+
+int main(int argc, char* argv[]){
+  if(argc!=2){
+    cout<<"Input Argument Error!"<<endl;
+    cout<<"Example: ./predict images/71.png"<<endl;
+    return 0;
+  }
+
+  string imgPath = argv[1];
+  cout<<"Predicting "<<argv[1]<<endl;
+  Predict p("dict_50.yml","training_set.yml",500,51);
+  p.getClass(imgPath,62);
+  cout<<"Done, saved to prediction.txt"<<endl;
+
+  return 0;
+}
+
+
+
+
+
